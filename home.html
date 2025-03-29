@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showAbout() {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('classmate-section').style.display = 'none';
+            document.getElementById('contact-section').style.display = 'none';
+            document.getElementById('about-section').style.display = 'block';
+            document.getElementById('project-section').style.display = 'none';
+        }
+
+        function showClassmate() {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('about-section').style.display = 'none';
+            document.getElementById('contact-section').style.display = 'none';
+            document.getElementById('classmate-section').style.display = 'block';
+            document.getElementById('project-section').style.display = 'none';
+        }
+
+        function showContact() {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('about-section').style.display = 'none';
+            document.getElementById('classmate-section').style.display = 'none';
+            document.getElementById('contact-section').style.display = 'block';
+            document.getElementById('project-section').style.display = 'none';
+        }
+
+        function showProject() {
+            document.getElementById('main-content').style.display = 'none';
+            document.getElementById('about-section').style.display = 'none';
+            document.getElementById('classmate-section').style.display = 'none';
+            document.getElementById('contact-section').style.display = 'none';
+            document.getElementById('project-section').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-box">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="header-box nav-links">
+            <a href="HOME.html" onclick="location.reload(); return false;">HOME</a>
+            <a href="CLASSMATE.html" onclick="event.preventDefault(); showClassmate();">CLASSMATE</a>
+            <a href="ABOUT.html" onclick="event.preventDefault(); showAbout();">ABOUT</a>
+            <a href="CONTACT.html" onclick="event.preventDefault(); showContact();">CONTACT</a>
+            <a href="PROJECT.html" onclick="event.preventDefault(); showProject();">PROJECT</a>
+        </div>
+        <div class="header-box menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="section-one">
+            <div class="sec-box">
+                <img src="gwapo222.jpg" alt="Image 1">
+            </div>
+            <div class="sec-box myFour">
+                <div class="box"><img src="ggg.jpg" alt="Image 2"></div>
+                <div class="box"><img src="gwapo0000.jpg" alt="Image 2"></div>
+                <div class="box"><img src="gwapo200.jpg" alt="Image 2"></div>
+                <div class="box"><img src="gwapo123.jpg" alt="Image 2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-section" style="display: none; text-align: center; padding: 50px;">
+        <h2>About Us</h2>
+        <p>Welcome to our website! We are a passionate team dedicated to providing the best content and experience. Our goal is to create a platform where creativity and innovation come together.</p>
+        <p>We specialize in web development, design, and digital experiences that leave a lasting impression.</p>
+        <img src="ggg.jpg" alt="About Image" style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    </div> 
+
+    <div id="classmate-section" style="display: none; text-align: center; padding: 50px;">
+        <h2>Classmates</h2>
+        <p>Meet our amazing classmates! We are a group of passionate individuals who support and inspire each other.</p>
+        <div class="classmate-list" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <div class="classmate-card" style="padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="ttt.jpg" alt="Classmate 1" style="width: 100px; height: 100px; border-radius: 50%;">
+                <p><strong>RIVIN</strong></p>
+            </div>
+            <div class="classmate-card" style="padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="rrr.jpg" alt="Classmate 2" style="width: 100px; height: 100px; border-radius: 50%;">
+                <p><strong>PATISOY</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-section" style="display: none; text-align: center; padding: 50px;">
+        <h2>CONTACT US</h2>
+        <p>Feel free to reach out to us through any of the following methods:</p>
+        <p>Email: contact@ourwebsite.com</p>
+        <p>Phone: 09051856723</p>
+        <p>Address: MIMBALAGON GINGOOG CITY</p>
+        <form>
+            <input type="text" placeholder="Your Name" style="padding: 10px; margin: 5px; width: 80%; max-width: 400px;"><br>
+            <input type="email" placeholder="Your Email" style="padding: 10px; margin: 5px; width: 80%; max-width: 400px;"><br>
+            <textarea placeholder="Your Message" style="padding: 10px; margin: 5px; width: 80%; max-width: 400px; height: 100px;"></textarea><br>
+            <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px;">Submit</button>
+        </form>
+    </div>
+
+    <div id="project-section" style="display: none; text-align: center; padding: 50px;">
+        <h2>My project</h2>
+        <p>XRM125 thai concept:</p>
+        <div class="project-list" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <div class="project-card" style="padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="download (1).jfif" alt="Project 1" style="width: 100px; height: 100px; border-radius: 10px;">
+                <p><strong>XRM125FI</strong></p>
+            </div>
+            <div class="project-card" style="padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <img src="download.jfif" alt="Project 2" style="width: 100px; height: 100px; border-radius: 10px;">
+                <p><strong>XRM125 CARB</strong></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
